@@ -1,0 +1,118 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+article[data-testid="test-profile-card"] {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+figure {
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+figure img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+input {
+  width: 90px;
+  height: 25px;
+  display: flex;
+  align-self: center;
+}
+.test-user-name {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  color: #007bff;
+}
+
+.input {
+  border: 2px solid #888;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+  transition: border 0.3s ease;
+  width: 100%;
+  height: auto;
+  border: 5px;
+  margin-bottom: 10px;
+}
+.input.filled.filled {
+  border: none;
+}
+.input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 1.5rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  article[data-testid="test-profile-card"] {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure img {
+    margin-bottom: 1rem;
+  }
+}

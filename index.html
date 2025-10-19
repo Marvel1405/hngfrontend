@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalu Marvelous - Profile Card</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <header data-testid="test-user-name">
+        <input
+          class="input"
+          type="text"
+          id="userInput"
+          placeholder="Enter your name"
+        />
+      </header>
+
+      <figure>
+        <input
+          type="file"
+          id="imageUpload"
+          accept="image/*"
+          placeholder="Pick Image"
+        />
+        <img
+          id="preview"
+          src="./Images/avatar"
+          alt=""
+          style="max-width: 300px; display: flex"
+        />
+      </figure>
+
+      <p data-testid="test-user-bio">
+        A passionate web developer who loves turning ideas into digital
+        experiences. Always eager to learn, grow, and create clean,
+        user-friendly interfaces.
+      </p>
+
+      <p>
+        Current time (ms):
+        <span data-testid="test-user-time"></span>
+      </p>
+
+      <nav data-testid="test-user-social-links">
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              >Twitter N/A</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Marvel1405"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/marvelous-kalu-239666380"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Reading</li>
+          <li>Photography</li>
+          <li>Traveling</li>
+          <li>Music</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Lateness</li>
+          <li>Clutter</li>
+          <li>Negativity</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
