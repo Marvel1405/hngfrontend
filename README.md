@@ -43,7 +43,7 @@ This project showcases good HTML semantics, accessibility practices, and respons
 
 1. *Download or clone* this repository:
    ```bash
-   git clone https://github.com/Marvel1405/kalu-marvelous-profile-card.git
+   git clone https://github.com/Marvel1405/hngfrontend.git
 
 2. Open the project folder in your code editor.
 
